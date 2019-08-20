@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <style>
+.header {
+  padding: 80px;
+  text-align: center; 
+  background: #1abc9c;
+  color: white;
+}
+.header h1 {
+  font-size: 90px;
+}
+.navbar {
+    display: flex;
+    flex-flow: wrap-reverse;
+    overflow: scroll;
+    background-color: #333;
+}
+.navbar a {
+    float: left;
+    display:block;
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 700px) {
+.row .navbar { 
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+<div class="header">
+<h1>My Website</h1>
+<p>A website created by me.</p>
+</div>
+<div class = "navbar">
+    <div class = "row">
+    <a href="#">link</a>
+    <a href="#">linkk</a>
+    <a href="#">Link</a>
+</div></div>
+<div class="flex-containe">
+  <div class="row">...</div>
+  <div class="row">...</div>
+</div>
+</body>
+</html>
